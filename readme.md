@@ -15,6 +15,7 @@
   ```
   **Username 為你的 GitHub id。**
   **app-name 為你的 repo name。**
+  
 4. 繼續在`package.json`中，於`script`的地方加入
   ```
   "predeploy": "npm run build",
