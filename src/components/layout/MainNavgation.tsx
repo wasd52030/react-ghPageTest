@@ -2,19 +2,20 @@ import { Link } from "react-router-dom"
 import classes from "./MainNavigation.module.scss"
 
 export default function MainNavgation() {
+    const root = 'react-ghPageTest'
     return (
         <header className={classes.header}>
             <div className={classes.logo}>React Meetups</div>
             <nav>
                 <ul>
                     <li>
-                        <Link to="/">All Meetups</Link>
+                        <Link to={`/${root}/`} >All Meetups</Link>
                     </li>
                     <li>
-                        <Link to="/new-meetup">Add New Meetup</Link>
+                        <Link to={`/${root}/new-meetup`}>Add New Meetup</Link>
                     </li>
                     <li>
-                        <Link to="/favorites">My Favorites</Link>
+                        <Link to={`/${root}/favorites`}>My Favorites</Link>
                     </li>
                 </ul>
             </nav>

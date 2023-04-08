@@ -8,17 +8,19 @@ import Layout from './components/layout/Layout'
 
 function App() {
 
+  const root='react-ghPageTest'
+
   return (
     <div className="App">
       <Layout>
         <Switch>
-          <Route path="/" exact>
+          <Route path={`/${root}/`} exact>
             <AllMeetupsPage />
           </Route>
-          <Route path="/new-meetup" >
+          <Route path={`/${root}/new-meetup`} >
             <NewMeetupPage />
           </Route>
-          <Route path="/favorites" >
+          <Route path={`/${root}/favorites`} >
             <FavoritesPage />
           </Route>
         </Switch>
