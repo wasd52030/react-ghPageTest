@@ -17,7 +17,7 @@ export default function NewMeetupPage() {
                 }
             }
         ).then(() => {
-            history.replace("/")
+            history.replace("/react-ghPageTest/")
         })
     }
 
